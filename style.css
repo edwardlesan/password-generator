@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&family=Nunito:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+    --main-color: #1f1f21;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.container h1 {
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 24px;
+    color: var(--main-color);
+    font-weight: 400;
+}
+
+.container input {
+    padding: 20px;
+    user-select: none;
+    height: 50px;
+    width: 400px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    outline: none;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+input::placeholder {
+    font-size: 23px;
+    font-weight: 500;
+    font-family: 'Montserrat';
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#button {
+    font-size: 15px;
+    margin-top: 40px;
+    border: 2px solid var(--main-color);
+    width: 185px;
+    height: 50px;
+    text-align: center;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#button:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out all;
+}
+
+@media (max-width: 600px) {
+
+    .container input {
+        width: 300px;
+    }
+
+    .container h1 {
+        font-size: 18px;
+    }
+
+    #button {
+        width: 140px;
+    }
+}
+
+@media (max-width: 400px) {
+    
+    .container input {
+        width: 240px;
+    }
+
+    .container h1 {
+        font-size: 14px;
+    }
+
+    #button {
+        width: 110px;
+    }
+}
